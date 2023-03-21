@@ -1,0 +1,61 @@
+body {
+    background-color: #45bcd1;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, #339aca, #2c54b1);
+}
+
+canvas {
+    border: 5px solid #2e2e2e;
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/Flappy_Bird_Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.backdrop-blur {
+    filter: blur(5px);
+}
+
+#end-menu {
+    display: none;
+    margin: 70px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(8, 171, 247);
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(54, 68, 77, 0.788);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+}
+
+#score-display {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(6, 179, 247);
+}
+
+button {
+    background-color: #186ea0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
